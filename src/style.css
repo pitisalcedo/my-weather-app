@@ -119,8 +119,6 @@ i {
 }
 
 .open-source-code {
-  position: relative;
-  left: 220px;
-  top: -20px;
+  text-align: center;
   font-size: 12px;
 }
