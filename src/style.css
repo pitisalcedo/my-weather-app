@@ -117,3 +117,10 @@ i {
   font-size: 20px;
   margin-bottom: -10px;
 }
+
+.open-source-code {
+  position: relative;
+  left: 220px;
+  top: -20px;
+  font-size: 12px;
+}
