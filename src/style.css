@@ -1,0 +1,119 @@
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 50px;
+  border: 4px solid #888888;
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  font-family: "Raleway", sans-serif;
+  background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+}
+
+.search-city {
+  border-bottom: 3px solid #888888;
+  max-width: 400px;
+}
+
+button {
+  position: relative;
+  top: -5px;
+  right: -10px;
+}
+
+.current-location-button {
+  position: relative;
+  left: 250px;
+  top: -46px;
+  border: 1px solid #888888;
+  border-radius: 5px;
+  padding: 6px 15px;
+  color: #596aca;
+  transition: all 200ms ease-in-out;
+}
+.current-location-button:hover {
+  cursor: pointer;
+  color: white;
+  background: #3b4db3;
+}
+
+.list-group-cities {
+  position: relative;
+  top: -80px;
+  left: 600px;
+  line-height: 0.5px;
+  color: #3b4db3;
+}
+
+.row1 {
+  margin-top: -50px;
+  text-align: left;
+  font-size: 22px;
+  color: #596aca;
+  font-weight: 900;
+}
+
+h1 {
+  color: #596aca;
+  font-weight: 900;
+  font-size: 50px;
+}
+
+h2,
+h3 {
+  color: #5d5b6a;
+  font-size: 20px;
+}
+
+.row2 {
+  margin-top: -15px;
+}
+
+.current-degrees {
+  text-align: right;
+  font-size: 80px;
+  color: #596aca;
+  border-right: 5px solid;
+  padding-right: 20px;
+  line-height: 70px;
+}
+
+.units {
+  font-size: 25px;
+  position: relative;
+  top: -35px;
+}
+
+i {
+  color: #888888;
+  font-size: 80px;
+}
+
+.list-group-information {
+  margin-left: -50px;
+  line-height: 1.2px;
+  color: #5d5b6a;
+  font-size: 20px;
+}
+
+.daily-forecast {
+  max-width: 800px;
+}
+
+.card {
+  text-align: center;
+  line-height: 0.5px;
+  border: none;
+  border-left: 5px solid;
+  border-right: 5px solid;
+  border-color: #9ba6df;
+}
+
+.card-text {
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.card-title {
+  font-size: 20px;
+  margin-bottom: -10px;
+}

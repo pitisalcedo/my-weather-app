@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/54976c35e7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <title>Weather App</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="search-city">
+        <form id="search-city-form">
+          <input
+            type="text"
+            placeholder="Search..."
+            autocomplete="off"
+            id="city-search"
+          />
+
+          <button
+            class="btn btn-outline-secondary"
+            type="submit"
+            id="go-button"
+          >
+            Go
+          </button>
+        </form>
+      </div>
+
+      <button class="current-location-button" id="current-location-button">
+        Current Location
+      </button>
+
+      <!-- Available Cities to Search -->
+
+      <div class="col col-lg-3">
+        <div class="list-group-cities">
+          <button
+            type="button"
+            class="list-group-item list-group-item-action bg-transparent"
+          >
+            New York
+          </button>
+          <button
+            type="button"
+            class="list-group-item list-group-item-action bg-transparent l"
+          >
+            San Francisco
+          </button>
+          <button
+            type="button"
+            class="list-group-item list-group-item-action bg-transparent"
+          >
+            Paris
+          </button>
+          <button
+            type="button"
+            class="list-group-item list-group-item-action bg-transparent"
+          >
+            Tokyo
+          </button>
+        </div>
+      </div>
+
+      <!-- City, Date & Time -->
+      <div class="row1">
+        <div class="row justify-content-md-center">
+          <div class="col col-lg-2">
+            Currently:
+          </div>
+          <div class="col-md-auto">
+            <h1>
+              <strong>City...</strong>
+            </h1>
+            <h2 id="current-date"></h2>
+            <h3 id="current-time"></h3>
+          </div>
+        </div>
+      </div>
+      <br />
+
+      <!-- Current Weather Information -->
+      <div class="row2">
+        <div class="row justify-content-center">
+          <div class="col-4">
+            <p class="current-degrees">
+              <span class="temperature" id="temperature">--</span
+              ><span class="units">
+                <a href="#" id="fahrenheit-link">°F</a> |
+                <a href="#" id="celsius-link">°C</a>
+              </span>
+              <br />
+              <i class="fas fa-cloud-sun"></i>
+            </p>
+          </div>
+
+          <div class="col-4">
+            <ul class="list-group-information list-group-flush">
+              <li class="list-group-item bg-transparent">
+                <span id="description"> -- </span>
+              </li>
+              <li class="list-group-item bg-transparent">
+                Feels like: <span id="feels-like"> -- </span>°F
+              </li>
+              <li class="list-group-item bg-transparent">
+                Wind: <span id="wind">--</span>mph
+              </li>
+              <li class="list-group-item bg-transparent">
+                Humidity: <span id="humidity">--</span>%
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <br />
+
+      <!-- 5 Day Forecast & Cards -->
+      <p>5 Day Forecast | <span id="selected-city"></span></p>
+      <section class="daily-forecast">
+        <div class="card-group">
+          <div class="card bg-transparent">
+            <i class="fas fa-cloud-sun"></i>
+            <div class="card-body">
+              <p class="card-text">
+                70°F | 30°F
+              </p>
+              <h5 class="card-title">MON</h5>
+            </div>
+          </div>
+          <div class="card bg-transparent">
+            <i class="fas fa-cloud-sun-rain"></i>
+            <div class="card-body">
+              <p class="card-text">
+                70°F | 30°F
+              </p>
+              <h5 class="card-title">TUE</h5>
+            </div>
+          </div>
+          <div class="card bg-transparent">
+            <i class="fas fa-sun"></i>
+            <div class="card-body">
+              <p class="card-text">
+                70°F | 30°F
+              </p>
+              <h5 class="card-title">WED</h5>
+            </div>
+          </div>
+          <div class="card bg-transparent">
+            <i class="fas fa-cloud-sun"></i>
+            <div class="card-body">
+              <p class="card-text">
+                70°F | 30°F
+              </p>
+              <h5 class="card-title">THU</h5>
+            </div>
+          </div>
+          <div class="card bg-transparent">
+            <i class="fas fa-cloud-showers-heavy"></i>
+            <div class="card-body">
+              <p class="card-text">
+                70°F | 30°F
+              </p>
+              <h5 class="card-title">FRI</h5>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
