@@ -53,6 +53,7 @@ function handleSubmit(event) {
   event.preventDefault();
   let city = document.querySelector("#city-search").value;
 
+  document.querySelector("h1").innerHTML = "#city-search".value;
   document.querySelector("#selected-city").innerHTML = "#city-search".value;
 
   searchCity(city);
