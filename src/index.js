@@ -59,6 +59,26 @@ function handleSubmit(event) {
   searchCity(city);
 }
 
+function chooseNewYork(event) {
+  event.preventDefault();
+  searchCity("New York");
+}
+
+function chooseSanFrancisco(event) {
+  event.preventDefault();
+  searchCity("San Francisco");
+}
+
+function chooseParis(event) {
+  event.preventDefault();
+  searchCity("Paris");
+}
+
+function chooseTokyo(event) {
+  event.preventDefault();
+  searchCity("Tokyo");
+}
+
 function showTemperature(response) {
   document.querySelector("h1").innerHTML = response.data.name;
   document.querySelector("#selected-city").innerHTML = response.data.name;
@@ -107,5 +127,17 @@ celsiusLink.addEventListener("click", convertToCelsius);
 
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentPosition);
+
+let newYorkButton = document.querySelector("#new-york-button");
+newYorkButton.addEventListener("click", chooseNewYork);
+
+let sanFranciscoButton = document.querySelector("#san-francisco-button");
+sanFranciscoButton.addEventListener("click", chooseSanFrancisco);
+
+let parisButton = document.querySelector("#paris-button");
+parisButton.addEventListener("click", chooseParis);
+
+let tokyoButton = document.querySelector("#tokyo-button");
+tokyoButton.addEventListener("click", chooseTokyo);
 
 searchCity("Chicago");
