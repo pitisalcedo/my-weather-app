@@ -80,6 +80,7 @@ function chooseTokyo(event) {
 }
 
 function showTemperature(response) {
+  let iconElement = document.querySelector("#icon");
   document.querySelector("h1").innerHTML = response.data.name;
   document.querySelector("#selected-city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
@@ -95,6 +96,11 @@ function showTemperature(response) {
   );
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
+
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
 
 function searchLocation(position) {

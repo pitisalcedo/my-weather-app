@@ -6,6 +6,7 @@
   border-radius: 5px;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
   font-family: "Maitree", serif;
+  background: #c9ccd3;
   background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
 }
 
@@ -76,6 +77,12 @@ h3 {
   font-size: 25px;
   position: relative;
   top: -35px;
+}
+
+.main-icon {
+  position: relative;
+  top: -15px;
+  left: -40px;
 }
 
 i {
