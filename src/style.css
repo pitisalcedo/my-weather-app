@@ -85,11 +85,6 @@ h3 {
   left: -40px;
 }
 
-i {
-  color: #888888;
-  font-size: 80px;
-}
-
 .list-group-information {
   margin-left: -50px;
   line-height: 10px;
@@ -101,12 +96,16 @@ i {
   max-width: 800px;
 }
 
+.card-group {
+  display: inline-block;
+  column-break-inside: avoid;
+}
+
 .card {
   text-align: center;
   line-height: 0.5px;
   border: none;
   border-left: 5px solid;
-  border-right: 5px solid;
   border-color: #9ba6df;
 }
 
