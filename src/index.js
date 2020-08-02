@@ -81,6 +81,9 @@ function chooseTokyo(event) {
 
 function showTemperature(response) {
   let iconElement = document.querySelector("#icon");
+
+  fahrenheitTemperature = response.data.main.temp;
+
   document.querySelector("h1").innerHTML = response.data.name;
   document.querySelector("#selected-city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
@@ -117,8 +120,11 @@ function getCurrentPosition(event) {
 function convertToCelsius(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = 21;
+  let celsiusTemperature = ((fahrenheitTemperature - 32) * 5) / 9;
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
+
+let fahrenheitTemperature = null;
 
 let dateElement = document.querySelector("#current-date");
 let currentDate = new Date();
