@@ -1,5 +1,5 @@
 .container {
-  max-width: 900px;
+  max-width: 800px;
   margin: 30px auto;
   padding: 50px;
   border: 1px solid #888888;
@@ -23,33 +23,34 @@ button {
   border: 1px solid #888888;
   border-radius: 5px;
   padding: 6px 15px;
-  color: #596aca;
+  color: #588da8;
   transition: all 200ms ease-in-out;
 }
 .current-location-button:hover {
   cursor: pointer;
   color: white;
-  background: #3b4db3;
+  background: #588da8;
 }
 
 .list-group-cities {
+  max-width: 200px;
   position: relative;
   top: -80px;
-  left: 600px;
+  left: 460px;
   line-height: 0.5px;
-  color: #3b4db3;
+  color: #588da8;
 }
 
 .row1 {
   margin-top: -80px;
   text-align: left;
   font-size: 22px;
-  color: #596aca;
+  color: #588da8;
   font-weight: 900;
 }
 
 h1 {
-  color: #596aca;
+  color: #588da8;
   font-weight: 900;
   font-size: 50px;
 }
@@ -67,14 +68,14 @@ h3 {
 .current-degrees {
   text-align: right;
   font-size: 80px;
-  color: #596aca;
+  color: #588da8;
   border-right: 5px solid;
   padding-right: 20px;
   line-height: 70px;
 }
 
 .units {
-  font-size: 25px;
+  font-size: 18px;
   position: relative;
   top: -35px;
 }
@@ -106,7 +107,7 @@ h3 {
   line-height: 0.5px;
   border: none;
   border-left: 5px solid;
-  border-color: #9ba6df;
+  border-color: #588da8;
 }
 
 .card-text {
