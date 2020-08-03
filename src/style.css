@@ -1,7 +1,7 @@
 .container {
   max-width: 800px;
   margin: 30px auto;
-  padding: 50px;
+  padding: 40px 70px;
   border: 1px solid #888888;
   border-radius: 5px;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
@@ -36,7 +36,7 @@ button {
   max-width: 200px;
   position: relative;
   top: -80px;
-  left: 460px;
+  left: 450px;
   line-height: 0.5px;
   color: #588da8;
 }
